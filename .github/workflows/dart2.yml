@@ -1,0 +1,54 @@
+name: iOS Build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.35.7'
+
+      - name: Show repo and find pubspec(s) (debug)
+        run: |
+          pwd
+          ls -la
+          find . -maxdepth 6 -name pubspec.yaml -print
+
+      - name: Install dependencies
+        run: flutter pub get
+        working-directory: consumer-ui-app-main
+
+      - name: Setup Podfile
+        run: |
+          cd consumer-ui-app-main/ios
+          rm -f Podfile.lock
+          cat > Podfile << EOL
+platform :ios, '13.0'
+
+target 'Runner' do
+  use_frameworks!
+  use_modular_headers!
+
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+end
+EOL
+        shell: bash
+
+      - name: Install and update CocoaPods
+        run: |
+          cd consumer-ui-app-main/ios
+          pod repo update
+          pod install --repo-update
+        shell: bash
+
+      - name: Build iOS (no codesign)
+        run: flutter build ios --no-codesign --release
+        working-directory: consumer-ui-app-main
