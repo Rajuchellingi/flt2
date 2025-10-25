@@ -1,42 +1,37 @@
-name: iOS-ipa-build
+name: iOS Build
 
 on:
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   build-ios:
-    name: 🎉 iOS Build
     runs-on: macos-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
-          architecture: x64
-      - run: flutter pub get
-      
+          flutter-version: '3.35.7'
 
-      - run: pod repo update
-        working-directory: ios
+      - name: Show repo and find pubspec(s) (debug)
+        run: |
+          pwd
+          ls -la
+          find . -maxdepth 6 -name pubspec.yaml -print
 
-      - run: flutter build ios --release --no-codesign
+      - name: Install dependencies
+        run: flutter pub get
+        working-directory: ./consumer-ui-app-main/consumer-ui-app-main
 
-      - run: mkdir Payload
-        working-directory: build/ios/iphoneos
+      - name: Update CocoaPods repos
+        run: |
+          cd consumer-ui-app-main/consumer-ui-app-main/ios
+          pod repo update || true
+        shell: bash
 
-      - run: mv Runner.app/ Payload
-        working-directory: build/ios/iphoneos
-
-      - name: Zip output
-        run: zip -qq -r -9 FlutterIpaExport.ipa Payload
-        working-directory: build/ios/iphoneos
-
-      - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: build/ios/iphoneos/FlutterIpaExport.ipa
-          tag: v1.0
-          overwrite: true
-          body: "This is first release"
+      - name: Build iOS (no codesign)
+        run: flutter build ios --no-codesign --release
+        working-directory: ./consumer-ui-app-main/consumer-ui-app-main
