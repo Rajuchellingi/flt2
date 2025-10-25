@@ -1,7 +1,9 @@
-name: iOS Build
+name: Dart
 
 on:
   push:
+    branches: [ main ]
+  pull_request:
     branches: [ main ]
   workflow_dispatch:
 
@@ -11,6 +13,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Cache CocoaPods files
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cocoaPods
+            ~/Library/Caches/CocoaPods
+            consumer-ui-app-main/ios/Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-
+
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pub-cache
+            .dart_tool
+            build
+          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-flutter-
 
       - uses: subosito/flutter-action@v2
         with:
