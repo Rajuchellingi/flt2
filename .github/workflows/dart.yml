@@ -54,18 +54,27 @@ jobs:
         run: |
           cd consumer-ui-app-main/ios
           rm -f Podfile.lock
-          echo 'platform :ios, "13.0"
+          cat > Podfile << 'EOF'
+platform :ios, '13.0'
 
-          target "Runner" do
-            use_frameworks!
-            use_modular_headers!
-            
-            flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-          end' > Podfile
+target 'Runner' do
+  use_frameworks!
+  use_modular_headers!
+
+  # Flutter Pod dependencies
+  pod 'Flutter', :path => '../.ios/Flutter'
+  
+  # Flutter plugins Pods
+  flutter_application_path = '../'
+  load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+  install_all_flutter_pods(flutter_application_path)
+end
+EOF
         shell: bash
 
       - name: Install and update CocoaPods
         run: |
+          sudo gem install cocoapods
           cd consumer-ui-app-main/ios
           pod repo update
           pod install --repo-update
