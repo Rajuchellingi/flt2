@@ -54,16 +54,14 @@ jobs:
         run: |
           cd consumer-ui-app-main/ios
           rm -f Podfile.lock
-          cat > Podfile << EOL
-platform :ios, '13.0'
+          echo 'platform :ios, "13.0"
 
-target 'Runner' do
-  use_frameworks!
-  use_modular_headers!
-
-  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-end
-EOL
+          target "Runner" do
+            use_frameworks!
+            use_modular_headers!
+            
+            flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+          end' > Podfile
         shell: bash
 
       - name: Install and update CocoaPods
