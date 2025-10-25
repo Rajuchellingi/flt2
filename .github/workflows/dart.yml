@@ -50,36 +50,35 @@ jobs:
         run: flutter pub get
         working-directory: consumer-ui-app-main
 
-      - name: Setup Podfile
-        run: |
-          cd consumer-ui-app-main/ios
-          rm -f Podfile.lock
-          cat > Podfile << 'EOF'
-platform :ios, '13.0'
-
-target 'Runner' do
-  use_frameworks!
-  use_modular_headers!
-
-  # Flutter Pod dependencies
-  pod 'Flutter', :path => '../.ios/Flutter'
-  
-  # Flutter plugins Pods
-  flutter_application_path = '../'
-  load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
-  install_all_flutter_pods(flutter_application_path)
-end
-EOF
-        shell: bash
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
 
       - name: Install and update CocoaPods
         run: |
-          sudo gem install cocoapods
-          cd consumer-ui-app-main/ios
+          gem install cocoapods -N
+          pod setup
+        shell: bash
+
+      - name: Flutter clean
+        run: flutter clean
+        working-directory: consumer-ui-app-main
+
+      - name: Flutter pub get and pod install
+        run: |
+          flutter pub get
+          cd ios
+          rm -f Podfile.lock
           pod repo update
           pod install --repo-update
+        working-directory: consumer-ui-app-main
         shell: bash
 
       - name: Build iOS (no codesign)
-        run: flutter build ios --no-codesign --release
+        run: |
+          flutter precache --ios
+          flutter build ios --no-codesign --release
         working-directory: consumer-ui-app-main
+        shell: bash
