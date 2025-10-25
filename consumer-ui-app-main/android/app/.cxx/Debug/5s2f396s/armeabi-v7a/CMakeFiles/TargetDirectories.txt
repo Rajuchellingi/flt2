@@ -1,0 +1,2 @@
+D:/WEB_APPLICATIONS_React/B2B_Shopify/mobileApp_B2B/android/app/.cxx/Debug/5s2f396s/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/WEB_APPLICATIONS_React/B2B_Shopify/mobileApp_B2B/android/app/.cxx/Debug/5s2f396s/armeabi-v7a/CMakeFiles/rebuild_cache.dir

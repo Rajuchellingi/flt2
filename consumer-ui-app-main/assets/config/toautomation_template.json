@@ -1,0 +1,2228 @@
+[
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "collections",
+        "layout": {
+            "header": {
+                "options": {
+                    "search-input": {
+                        "show-voice-search": true,
+                        "placeholder": "Search..."
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "input",
+                            "key": "search-input"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "search-input": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "instanceId": "design3",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "menu-1",
+                        "screenId": "menu",
+                        "kind": "link_button",
+                        "label": "Menu"
+                    },
+                    "notification-button": {
+                        "icon": "notification-1",
+                        "screenId": "notification",
+                        "kind": "link_button",
+                        "label": "Notification"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": "Cart"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "notification-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "notification-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "root": {
+                        "color": "#000000",
+                        "backgroundColor": "#C4E5E7"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {
+                        "backgroundColor": "#C4E5E7"
+                    },
+                    "componentId": "collection-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "lists": [
+                            {
+                                "title": "Fashion",
+                                "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/670f975b0c8c2f4ae2477a04/fbe32d78-ac28-4b24-8f8b-eeb43c4a4026-fashion1.jpeg",
+                                "directLink": false,
+                                "link": {
+                                    "value": null,
+                                    "kind": null
+                                },
+                                "lists": [
+                                    {
+                                        "title": "Men's Fashion",
+                                        "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/670f97980c8c2f4ae2477a12/cce80d21-f88e-4b62-b31f-75fa401a3b57-shopping1.webp",
+                                        "directLink": false,
+                                        "link": {
+                                            "value": null,
+                                            "kind": null
+                                        },
+                                        "lists": [
+                                            {
+                                                "title": "Western Wear",
+                                                "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/670f97e80c8c2f4ae2477a1b/0ea733f7-992a-4e06-a7fd-68676654db75-mens.webp",
+                                                "directLink": true,
+                                                "link": {
+                                                    "value": "/collection/t-shirt",
+                                                    "kind": "collection"
+                                                },
+                                                "lists": []
+                                            },
+                                            {
+                                                "title": "Casual Wear",
+                                                "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/670f98120c8c2f4ae2477a29/5ad53b23-7188-4072-851c-9c879f75105a-mens2.webp",
+                                                "directLink": true,
+                                                "link": {
+                                                    "value": "/collection/shirt",
+                                                    "kind": "collection"
+                                                },
+                                                "lists": []
+                                            },
+                                            {
+                                                "title": "Fitness Wear",
+                                                "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/670f99bf0c8c2f4ae2477aab/f3a80f8b-f76e-4e02-a656-f9d95f5ec96e-images.jfif",
+                                                "directLink": true,
+                                                "link": {
+                                                    "value": "/collection/shirt",
+                                                    "kind": "collection"
+                                                },
+                                                "lists": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "title": "Women's Fashion",
+                                        "image": null,
+                                        "directLink": false,
+                                        "link": {
+                                            "value": "/modelCollection/t-shirt",
+                                            "kind": null
+                                        },
+                                        "lists": [
+                                            {
+                                                "title": "Women's Casual Wear",
+                                                "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/670f98440c8c2f4ae2477a39/966bca4c-553e-4cb1-b18d-ccd462eb3366-womens.jpg",
+                                                "directLink": true,
+                                                "link": {
+                                                    "value": "/collection/sarees",
+                                                    "kind": "collection"
+                                                },
+                                                "lists": []
+                                            },
+                                            {
+                                                "title": "Women's Western",
+                                                "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/670f986c0c8c2f4ae2477a41/fec3aa8f-d311-44fc-8b3f-6a3852a92890-womens2.jpg",
+                                                "directLink": true,
+                                                "link": {
+                                                    "value": "/collection/sarees",
+                                                    "kind": "collection"
+                                                },
+                                                "lists": []
+                                            },
+                                            {
+                                                "title": "Fitness Wear",
+                                                "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/670f9b220c8c2f4ae2477b35/325eb9b7-d828-4787-9983-d1149f7277d3-download1.jfif",
+                                                "directLink": true,
+                                                "link": {
+                                                    "value": "/collection/sarees",
+                                                    "kind": "collection"
+                                                },
+                                                "lists": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "title": "Kids",
+                                        "image": null,
+                                        "directLink": true,
+                                        "link": {
+                                            "value": null,
+                                            "kind": null
+                                        },
+                                        "lists": []
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "sdfsss",
+                                "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/673c85a8fb6204cf27051f1c/93505319-8162-4306-95e1-dc75ad5c4198-images2.jpeg",
+                                "directLink": false,
+                                "link": {
+                                    "value": null,
+                                    "kind": null
+                                },
+                                "lists": [
+                                    {
+                                        "title": "test",
+                                        "image": "https://toautomation-image.s3.ap-south-1.amazonaws.com/ri/toautomation/menu/673c94df65f043f8fc931992/ae46f65c-7fe9-4281-97b7-3e6ee764433f-0e01763f8f87ab2fcb1f3e1fcf224533.png",
+                                        "directLink": true,
+                                        "link": {
+                                            "value": null,
+                                            "kind": null
+                                        },
+                                        "lists": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "home",
+        "layout": {
+            "header": {
+                "options": {
+                    "search-input": {
+                        "show-voice-search": true,
+                        "placeholder": "Search..."
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "input",
+                            "key": "search-input"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "search-input": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "instanceId": "design3",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "menu-1",
+                        "screenId": "menu",
+                        "kind": "link_button",
+                        "label": "Menu"
+                    },
+                    "notification-button": {
+                        "icon": "notification-1",
+                        "screenId": "notification",
+                        "kind": "link_button",
+                        "label": "Notification"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": "Cart"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "notification-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "notification-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "root": {
+                        "color": "#000000",
+                        "backgroundColor": "#C4E5E7"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "faq-list-component",
+                    "instanceId": "design1",
+                    "id": "675a5e5a69c6ffab7cfdf46f",
+                    "source": {
+                        "title": "sdf",
+                        "lists": [
+                            {
+                                "question": "sdfsdf",
+                                "answer": "sdf"
+                            },
+                            {
+                                "question": "sfdsdfsdfcvsafd",
+                                "answer": "sdfsdfsdfsd"
+                            }
+                        ]
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "product-list",
+        "layout": {
+            "header": {
+                "options": {
+                    "search-input": {
+                        "show-voice-search": true,
+                        "placeholder": "Search..."
+                    },
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "input",
+                            "key": "search-input"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "search-input": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design3",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "menu-1",
+                        "screenId": "menu",
+                        "kind": "link_button",
+                        "label": "Menu"
+                    },
+                    "notification-button": {
+                        "icon": "notification-1",
+                        "screenId": "notification",
+                        "kind": "link_button",
+                        "label": "Notification"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": "Cart"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "notification-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "notification-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "root": {
+                        "color": "#000000",
+                        "backgroundColor": "#C4E5E7"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "product-list-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "show-wishlist": true,
+                        "show-add-to-cart": false,
+                        "show-variants": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "products",
+        "layout": {
+            "header": {
+                "options": {
+                    "search-input": {
+                        "show-voice-search": true,
+                        "placeholder": "Search..."
+                    },
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "input",
+                            "key": "search-input"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "search-input": {},
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design3",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "menu-1",
+                        "screenId": "menu",
+                        "kind": "link_button",
+                        "label": "Menu"
+                    },
+                    "notification-button": {
+                        "icon": "notification-1",
+                        "screenId": "notification",
+                        "kind": "link_button",
+                        "label": "Notification"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": "Cart"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "notification-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "notification-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "root": {
+                        "color": "#000000",
+                        "backgroundColor": "#C4E5E7"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "product-image",
+                    "instanceId": "design2",
+                    "source": {
+                        "show-wishlist": true,
+                        "show-add-to-cart": false,
+                        "show-variants": false,
+                        "show-similar-styles": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {
+                        "textAlign": "center",
+                        "fontWeight": "bold",
+                        "fontSize": 16
+                    },
+                    "componentId": "product-title",
+                    "instanceId": "design2",
+                    "source": {
+                        "show-wishlist": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "varaint-selector",
+                    "instanceId": "design2",
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "enquiry-button",
+                    "instanceId": "design1",
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "add-to-cart-button",
+                    "instanceId": "design1",
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "product-description",
+                    "instanceId": "design2",
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "related-products",
+                    "instanceId": "design2",
+                    "source": {
+                        "title": "Recently Viewed",
+                        "show-wishlist": true,
+                        "show-add-to-cart": false,
+                        "show-variants": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "cart",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Cart"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "screen-title": {},
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design3",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "menu-1",
+                        "screenId": "menu",
+                        "kind": "link_button",
+                        "label": "Menu"
+                    },
+                    "notification-button": {
+                        "icon": "notification-1",
+                        "screenId": "notification",
+                        "kind": "link_button",
+                        "label": "Notification"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": "Cart"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "notification-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "notification-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "root": {
+                        "color": "#000000",
+                        "backgroundColor": "#C4E5E7"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "price-details",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "Payment Details"
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {
+                        "textAlign": "left",
+                        "fontWeight": "bold"
+                    },
+                    "componentId": "cart-products",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "Order Summary"
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "related-products",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "Related Products",
+                        "show-wishlist": true,
+                        "show-add-to-cart": false,
+                        "show-variants": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "checkout",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Checkout"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "screen-title": {},
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design3",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "menu-1",
+                        "screenId": "menu",
+                        "kind": "link_button",
+                        "label": "Menu"
+                    },
+                    "notification-button": {
+                        "icon": "notification-1",
+                        "screenId": "notification",
+                        "kind": "link_button",
+                        "label": "Notification"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": "Cart"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "notification-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "notification-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "root": {
+                        "color": "#000000",
+                        "backgroundColor": "#C4E5E7"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "search-product-list",
+        "layout": {
+            "header": {
+                "options": {
+                    "search-input": {
+                        "show-voice-search": true,
+                        "placeholder": "Search..."
+                    },
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "input",
+                            "key": "search-input"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design3",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "menu-1",
+                        "screenId": "menu",
+                        "kind": "link_button",
+                        "label": "Menu"
+                    },
+                    "notification-button": {
+                        "icon": "notification-1",
+                        "screenId": "notification",
+                        "kind": "link_button",
+                        "label": "Notification"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": "Cart"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "notification-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "notification-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "root": {
+                        "color": "#000000",
+                        "backgroundColor": "#C4E5E7"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "product-list-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "show-wishlist": true,
+                        "show-add-to-cart": false,
+                        "show-variants": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "my-account",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "My Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "screen-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "padding": {
+                            "left": 7
+                        }
+                    },
+                    "back-button": {},
+                    "root": {}
+                },
+                "source": {}
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design3",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "menu-1",
+                        "screenId": "menu",
+                        "kind": "link_button",
+                        "label": "Menu"
+                    },
+                    "notification-button": {
+                        "icon": "notification-1",
+                        "screenId": "notification",
+                        "kind": "link_button",
+                        "label": "Notification"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": "Cart"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Account"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "notification-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "notification-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#138087",
+                        "color": "#138087"
+                    },
+                    "root": {
+                        "color": "#000000",
+                        "backgroundColor": "#C4E5E7"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {
+                        "backgroundColor": "#000000",
+                        "color": "#ffffff"
+                    },
+                    "componentId": "account-detail-component",
+                    "instanceId": "design1",
+                    "source": {},
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "account-menu-component",
+                    "instanceId": "design1",
+                    "options": {
+                        "address-button": {
+                            "icon": "address-button-1",
+                            "screenId": "address",
+                            "kind": "link_button",
+                            "label": "Address Book"
+                        },
+                        "enquiry-history-button": {
+                            "icon": "order-history-button-1",
+                            "screenId": "enquiryHistory",
+                            "kind": "link_button",
+                            "label": "Enquiry History"
+                        },
+                        "order-history-button": {
+                            "icon": "order-history-button-1",
+                            "screenId": "orderHistory",
+                            "kind": "link_button",
+                            "label": "Order History"
+                        },
+                        "booking-history-button": {
+                            "icon": "booking-history-button-1",
+                            "screenId": "bookingHistory",
+                            "kind": "link_button",
+                            "label": "Booking History"
+                        },
+                        "profile-button": {
+                            "icon": "profile-button-1",
+                            "screenId": "profile",
+                            "kind": "link_button",
+                            "label": "Profile"
+                        },
+                        "wishlist-button": {
+                            "icon": "wishlist-button-1",
+                            "screenId": "wishlist",
+                            "kind": "link_button",
+                            "label": "My Wishlist"
+                        }
+                    },
+                    "source": {
+                        "lists": [
+                            {
+                                "kind": "link_button",
+                                "key": "address-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "order-history-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "enquiry-history-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "booking-history-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "profile-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "wishlist-button"
+                            }
+                        ]
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "logout-component",
+                    "instanceId": "design1",
+                    "source": {},
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "manage-address",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Manage Address"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "order-history",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Order History"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "order-list-component",
+                    "instanceId": "design1",
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "order-detail",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Order Detail"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "booking-history",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Booking History"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "booking-detail",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Booking Detail"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "booking-confirmed",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Booking Confirmed"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "order-confirmed",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Order Confirmed"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "my-profile",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Profile Information"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "my-wishlist",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Wishlist"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "login",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Login"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "register",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Register"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {
+                        "backgroundColor": "#138087"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "pages",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "pages-title": {}
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "pages-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "pages-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "enquiry-history",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Enquiry History"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "enquiry-list-component",
+                    "instanceId": "design1",
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "enquiry-detail",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Enquiry Detail"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "enquiry-confirmed",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Order Confirmed"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    }
+]

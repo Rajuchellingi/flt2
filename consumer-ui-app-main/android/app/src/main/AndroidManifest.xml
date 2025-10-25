@@ -1,0 +1,146 @@
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.rietailDemo"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.rietailSample"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.rietailMobileApp"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.kalasilks"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.bevdaas"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.blankstore"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.syndicatefabric"> -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.shopify.nineShineLabel">
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.komaluniform"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.tomstill"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.uniformfactory"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.palam"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.tsgBreeze"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.allCategories"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.dashclothing"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.ssdtraders"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.mickeyhouse"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.dilipJewellery"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.praco"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.eyecareStudio"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.kapthe"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.brandShoppe"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.rietail.spPharma"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.shopify.italianColony"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.inoutitaly"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rietail.syndicate"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shopify.militaryMarvel"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shopify.houseOfMahnots"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shopify.slumberJill"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shopify.stellers"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shopify.parcElles"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shopify.engyne"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" package="com.shopify.mobilebuilderTest"> -->
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" package="com.shopify.dilipJewellery"> -->
+
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" package="com.shopify.nineShineLabel"> -->
+
+<!-- <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shopify.riMobileAppBuilder"> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/> -->
+    <!-- <uses-permission android:name="android.permission.GALLERY"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
+    <!-- <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/> -->
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.GALLERY"/>
+    <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS"/> -->
+    <!--change app name-->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove" />
+   <application
+    android:usesCleartextTraffic="true"
+        android:label="9shineslabel" 
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <meta-data android:name="com.google.android.exoplayer2.allow_muted_playback" android:value="true"/>
+            <!-- Displays an Android View that continues showing the launch screen
+                 Drawable until Flutter paints its first frame, then this splash
+                 screen fades out. A splash screen is useful to avoid any visual
+                 gap between the end of Android's launch screen and the painting of
+                 Flutter's first frame. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.SplashScreenDrawable"
+              android:resource="@drawable/launch_background"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="flutter_deeplinking_enabled" android:value="true" />
+            <intent-filter android:autoVerify="true">
+              <action android:name="android.intent.action.VIEW" />
+              <category android:name="android.intent.category.DEFAULT" />
+              <category android:name="android.intent.category.BROWSABLE" />
+              <!-- Adjust the scheme and host according to your app -->
+              <data android:scheme="https" android:host="www.9shineslabel.com" android:pathPrefix="/" />
+              <!-- <data android:scheme="https" android:host="www.houseofmahnots.in" /> -->
+              <!-- <data android:scheme="https" android:host="slumberjill.in" /> -->
+              <!-- <data android:scheme="https" android:host="www.stellers.in" /> -->
+              <!-- <data android:scheme="https" android:host="www.parcelles.in" /> -->
+              <!-- <data android:scheme="https" android:host="www.myengyne.com" /> -->
+              <!-- <data android:scheme="https" android:host="www.italiancolony.com" /> -->
+              <!-- <data android:scheme="https" android:host="samurai.qa.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="rietaildemo.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="kalasilks.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="bevdaas.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="praco.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="kapthe.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="eyecarestudio.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="inoutitaly.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="dilipjewellers.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="blankstore.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="ssdtraders.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="sp.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="mickeyhouse.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="syndicatefabric.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="komaluniform.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="uniformfactory.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="tomstill.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="palam.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="allcategories.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="brandshoppe.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="tsgbreeze.store.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="rietail.qa.rietail.com" /> -->
+              <!-- <data android:scheme="https" android:host="syndicate.qa.rietail.com" /> -->
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+    <!-- <uses-permission android:name="com.google.android.gms.permission.AD_ID"/> -->
+</manifest>

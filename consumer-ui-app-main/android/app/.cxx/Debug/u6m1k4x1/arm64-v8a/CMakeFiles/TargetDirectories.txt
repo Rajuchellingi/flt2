@@ -1,0 +1,2 @@
+D:/WEB_APPLICATIONS_React/Retail_Application/retail_mobileApp/android/app/.cxx/Debug/u6m1k4x1/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/WEB_APPLICATIONS_React/Retail_Application/retail_mobileApp/android/app/.cxx/Debug/u6m1k4x1/arm64-v8a/CMakeFiles/rebuild_cache.dir
