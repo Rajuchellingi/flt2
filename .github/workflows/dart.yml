@@ -24,14 +24,14 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
-        working-directory: ./consumer-ui-app-main/consumer-ui-app-main
+        working-directory: consumer-ui-app-main
 
       - name: Update CocoaPods repos
         run: |
-          cd consumer-ui-app-main/consumer-ui-app-main/ios
+          cd consumer-ui-app-main/ios
           pod repo update || true
         shell: bash
 
       - name: Build iOS (no codesign)
         run: flutter build ios --no-codesign --release
-        working-directory: ./consumer-ui-app-main/consumer-ui-app-main
+        working-directory: consumer-ui-app-main
