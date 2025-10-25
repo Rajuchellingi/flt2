@@ -1,16 +1,13 @@
 name: iOS-ipa-build
-
 on:
   workflow_dispatch:
-
 jobs:
   build-ios:
     name: 🎉 iOS Build
     runs-on: macos-latest
-
     steps:
       - uses: actions/checkout@v3
-
+      
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
@@ -24,36 +21,42 @@ jobs:
       
       - name: Install CocoaPods
         run: gem install cocoapods
-
+      
       - name: Install Flutter dependencies
-        working-directory: consumer-ui-app-main/consumer-ui-app-main
+        working-directory: flutter_app
         run: flutter pub get
-
+        
       - name: Update CocoaPods repos
-        working-directory: consumer-ui-app-main/consumer-ui-app-main/ios
+        working-directory: flutter_app/ios
         run: pod repo update
-
+      
       - name: Build iOS
-        working-directory: consumer-ui-app-main/consumer-ui-app-main
+        working-directory: flutter_app
         run: flutter build ios --release --no-codesign
-
+      
       - name: Create Payload directory
-        working-directory: consumer-ui-app-main/consumer-ui-app-main/build/ios/iphoneos
+        working-directory: flutter_app/build/ios/iphoneos
         run: mkdir Payload
-
+      
       - name: Move app to Payload
-        working-directory: consumer-ui-app-main/consumer-ui-app-main/build/ios/iphoneos
+        working-directory: flutter_app/build/ios/iphoneos
         run: mv Runner.app Payload/
-
+      
       - name: Create IPA
-        working-directory: consumer-ui-app-main/consumer-ui-app-main/build/ios/iphoneos
+        working-directory: flutter_app/build/ios/iphoneos
         run: zip -qq -r -9 FlutterIpaExport.ipa Payload
-
-      - name: Upload IPA
+      
+      - name: Upload IPA as artifact
+        uses: actions/upload-artifact@v4  # ✅ Updated to v4
+        with:
+          name: ios-build-${{ github.run_number }}
+          path: build/ios/iphoneos/FlutterIpaExport.ipa
+      
+      - name: Upload IPA to Release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: consumer-ui-app-main/consumer-ui-app-main/build/ios/iphoneos/FlutterIpaExport.ipa
+          file: flutter_app/build/ios/iphoneos/FlutterIpaExport.ipa
           tag: v1.0
           overwrite: true
-          body: "This is first release"
+          body: "iOS Build v1.0.${{ github.run_number }}"
