@@ -1,0 +1,5 @@
+{
+  "service": {
+    "contentService": "https://1w3th8lwz5.execute-api.ap-south-1.amazonaws.com/qa/"
+  }
+}

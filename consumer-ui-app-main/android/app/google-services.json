@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "741518052074",
+    "project_id": "messagge-f351e",
+    "storage_bucket": "messagge-f351e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741518052074:android:7d31428acdbd72e9b1a593",
+        "android_client_info": {
+          "package_name": "com.shopify.nineShineLabel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741518052074-of9p8oqovievtar73ljtlvrhlt6jobqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT8zOArqhD7fhqDKefLqDNLr55WHBVXJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741518052074-of9p8oqovievtar73ljtlvrhlt6jobqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

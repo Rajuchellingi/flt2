@@ -1,0 +1,115 @@
+// ignore_for_file: invalid_use_of_protected_member, deprecated_member_use
+
+import 'package:black_locust/common_component/loading_icon.dart';
+import 'package:black_locust/controller/return_controller.dart';
+import 'package:black_locust/controller/theme_controller.dart';
+import 'package:black_locust/view/footer/footer_design1.dart';
+import 'package:black_locust/view/footer/footer_design2.dart';
+import 'package:black_locust/view/footer/footer_design3.dart';
+import 'package:black_locust/view/footer/footer_design4.dart';
+import 'package:black_locust/view/footer/footer_design5.dart';
+import 'package:black_locust/view/header/common_header.dart';
+import 'package:black_locust/view/return/components/return_blocks.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+class ReturnScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final _controller = Get.find<ReturnController>();
+    final themeController = Get.find<ThemeController>();
+
+    return Obx(() {
+      var header = _controller.template.value['layout'] != null
+          ? _controller.template.value['layout']['header']
+          : null;
+      var footer = _controller.template.value['layout'] != null
+          ? _controller.template.value['layout']['footer']
+          : null;
+      var footerDesign = themeController.bottomBarType.value;
+      final isDesign3 = footer != null &&
+          footer.isNotEmpty &&
+          footerDesign == 'design3' &&
+          footer['visibility']['hide'] == false;
+      final isDesign2 = footer != null &&
+          footer.isNotEmpty &&
+          footerDesign == 'design2' &&
+          footer['visibility']['hide'] == false;
+      final isDesign4 = footer != null &&
+          footer.isNotEmpty &&
+          footerDesign == 'design4' &&
+          footer['visibility']['hide'] == false;
+      final isDesign5 = footer != null &&
+          footer.isNotEmpty &&
+          footerDesign == 'design5' &&
+          footer['visibility']['hide'] == false;
+      final isDesign1 = footer != null &&
+          footer.isNotEmpty &&
+          footerDesign == 'design1' &&
+          footer['visibility']['hide'] == false;
+      final actionButton = floatingActionButton(footer);
+
+      return SafeArea(
+          child: Scaffold(
+        appBar: (header != null && header.isNotEmpty)
+            ? AppBar(
+                backgroundColor: themeController.headerStyle('backgroundColor',
+                    header['style']['root']['backgroundColor']),
+                automaticallyImplyLeading: false,
+                titleSpacing: 0.0,
+                elevation: 0.0,
+                forceMaterialTransparency: true,
+                title: CommonHeader(header: header),
+              )
+            : null,
+        body: _controller.isLoading.value
+            ? LoadingIcon(
+                logoPath: themeController.logo.value,
+              )
+            : Stack(children: [
+                ReturnBlocks(controller: _controller),
+              ]),
+        floatingActionButtonLocation:
+            isDesign3 ? FloatingActionButtonLocation.centerDocked : null,
+        floatingActionButton: (isDesign3 && actionButton != null)
+            ? CustomFAB(
+                template: _controller.template.value,
+                actionButton: actionButton)
+            : null,
+        extendBody: isDesign1,
+        bottomNavigationBar: (_controller.isTemplateLoading.value == false &&
+                isDesign2)
+            ? FooterDesign2(template: _controller.template.value)
+            : isDesign4
+                ? FooterDesign4(template: _controller.template.value)
+                : isDesign3
+                    ? FooterDesign3(template: _controller.template.value)
+                    : isDesign5
+                        ? FooterDesign5(template: _controller.template.value)
+                        : isDesign1
+                            ? FooterDesign1(
+                                template: _controller.template.value)
+                            : null,
+        drawerEnableOpenDragGesture: false,
+      ));
+    });
+  }
+
+  floatingActionButton(footer) {
+    if (footer != null) {
+      if (footer['layout'] != null &&
+          footer['layout']['children'] != null &&
+          footer['layout']['children'].length > 0) {
+        var data = footer['layout']['children'].firstWhere(
+          (element) {
+            var key = element['key'];
+            return footer['options'][key]['isCenterButton'] == true;
+          },
+          orElse: () => null,
+        );
+
+        return data;
+      }
+    }
+  }
+}

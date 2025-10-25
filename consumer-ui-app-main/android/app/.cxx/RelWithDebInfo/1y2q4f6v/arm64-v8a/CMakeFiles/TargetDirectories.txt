@@ -1,0 +1,2 @@
+D:/ripsil-project/cursor-test/shopify-mobile-app/android/app/.cxx/RelWithDebInfo/1y2q4f6v/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/ripsil-project/cursor-test/shopify-mobile-app/android/app/.cxx/RelWithDebInfo/1y2q4f6v/arm64-v8a/CMakeFiles/rebuild_cache.dir

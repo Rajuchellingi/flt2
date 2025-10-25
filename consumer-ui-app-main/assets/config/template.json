@@ -1,0 +1,3565 @@
+[
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "collections",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Categories"
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "screen-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "fontSize": 17,
+                        "padding": {
+                            "left": 7
+                        }
+                    },
+                    "back-button": {},
+                    "search-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "bottom-header": {},
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design6",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "collection-component",
+                    "instanceId": "design5",
+                    "source": {
+                        "lists": [
+                            {
+                                "directLink": false,
+                                "title": "Designer Nighties",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-c7d7a223-36af-4cad-99ba-60c255aa2c59-b2bc41856af3462cb27edf00fd95e7cbpage271f9de5e3c1f45f5a0f73e2e385ab503.webp?v=1741762213",
+                                "attributes": [],
+                                "link": {
+                                    "value": "designer-nighties",
+                                    "kind": "collection"
+                                },
+                                "lists": [
+                                    {
+                                        "directLink": true,
+                                        "title": "Pure Cotton Nighty",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "pure-cotton-nighty",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    },
+                                    {
+                                        "directLink": true,
+                                        "title": "Hosiery Cotton Designer Nighties",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "cotton-designer-nighties",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    },
+                                    {
+                                        "directLink": true,
+                                        "title": "Cotton Blend Designer Nighty",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "cotton-blend",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    },
+                                    {
+                                        "directLink": true,
+                                        "title": "Satin Collection",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "satin-designer-nighty",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    },
+                                    {
+                                        "directLink": true,
+                                        "title": "Denim Nighty",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "denim-nighty",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    },
+                                    {
+                                        "directLink": true,
+                                        "title": "Alpine Nighty",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "alpine-designer-nighties",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    },
+                                    {
+                                        "directLink": true,
+                                        "title": "Rayon Designer Nighty",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "rayon-designer-nighty",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    },
+                                    {
+                                        "directLink": true,
+                                        "title": "Crush Cotton Nighty",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "crush-cotton-nighty",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    },
+                                    {
+                                        "directLink": true,
+                                        "title": "Viscose Nighty",
+                                        "image": "",
+                                        "attributes": [],
+                                        "link": {
+                                            "value": "polyester-viscose-nighty",
+                                            "kind": "collection"
+                                        },
+                                        "type": "submenu",
+                                        "lists": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "product-list",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "collection-title": {
+                        "numberOfLines": 1
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "collection-title",
+                            "key": "collection-title"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "collection-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "fontSize": 17,
+                        "padding": {
+                            "left": 7
+                        }
+                    },
+                    "search-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {
+                    "show-multi-view-icon": false,
+                    "show-multi-view": false,
+                    "default-view": "default"
+                },
+                "kind": "row"
+            },
+            "bottom-header": {},
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "collection-menu-component",
+                    "instanceId": "design1",
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "product-filter-component",
+                    "instanceId": "design2",
+                    "source": {
+                        "show-multi-view-icon": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "product-list-component",
+                    "instanceId": "design3",
+                    "source": {
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "related-products",
+                    "instanceId": "design3",
+                    "source": {
+                        "title": "YOU MAY ALSO LIKE",
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "products",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "share-button": {
+                        "icon": "share-button-1",
+                        "screenId": "share",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "share-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "cart-button": {
+                        "padding": {
+                            "right": 2
+                        }
+                    },
+                    "share-button": {
+                        "padding": {
+                            "left": 0
+                        }
+                    },
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "componentId": "add-to-cart-bar",
+                "instanceId": "design3",
+                "options": {
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "label": "Add To Cart"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "cart-button": {}
+                }
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "product-image",
+                    "instanceId": "design4",
+                    "source": {
+                        "show-share": false,
+                        "show-similar-styles": false,
+                        "show-wishlist": false,
+                        "show-add-to-cart": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "varaint-selector",
+                    "instanceId": "design4",
+                    "source": {
+                        "show-wishlist": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "custom-variant",
+                    "instanceId": "design1",
+                    "title": "Colour Swatch",
+                    "value": {
+                        "key": "colour_",
+                        "namespace": "custom"
+                    },
+                    "variant": {
+                        "key": "swatch",
+                        "namespace": "custom"
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "style": {
+                        "fontWeight": "bold",
+                        "fontSize": 18
+                    },
+                    "componentId": "product-title",
+                    "instanceId": "design4",
+                    "source": {
+                        "show-price": true,
+                        "show-share": false,
+                        "show-wishlist": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "quantity-selector",
+                    "instanceId": "design1",
+                    "visibility": {
+                        "hide": true
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "product-description",
+                    "instanceId": "design4",
+                    "options": {
+                        "collapsible": true,
+                        "defaultExpanded": false
+                    },
+                    "source": {
+                        "title": "Description"
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "meta-field-block",
+                    "instanceId": "design1",
+                    "source": {
+                        "key": "ebc_banner_1_for_mobile",
+                        "namespace": "custom"
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "meta-field-block",
+                    "instanceId": "design1",
+                    "source": {
+                        "key": "ebc_banner_2_for_mobile",
+                        "namespace": "custom"
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "meta-field-block",
+                    "instanceId": "design1",
+                    "source": {
+                        "key": "ebc_banner_3_for_mobile",
+                        "namespace": "custom"
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "rich-text-block",
+                    "instanceId": "design1",
+                    "options": {
+                        "collapsible": true,
+                        "defaultExpanded": false
+                    },
+                    "source": {
+                        "title": "Offers For You",
+                        "html": "<p>💖 <a href=\"https://www.9shineslabel.com/collections/nighty-tees\" rel=\"noopener noreferrer\" target=\"_blank\"><strong><em>Buy 3 Long T-Shirts for ₹1599</em></strong></a></p><p><br></p><p>🌸 <a href=\"https://www.9shineslabel.com/collections/nighty-tees\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Buy 3 Regular Polo Nighties for ₹1699</strong></a></p><p><br></p><p>✨ <a href=\"https://www.9shineslabel.com/collections/nighty-tees\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Buy 3 Hosiery &amp; Lycra Polo Nighties for ₹1999</strong></a></p><p><br></p><p>🌷<a href=\"https://www.9shineslabel.com/collections/nighty-tees\" rel=\"noopener noreferrer\" target=\"_blank\"><em> </em><strong><em>Buy 3 Plus Size Polo Nighties for ₹2499</em></strong></a></p><p><br></p><p>🎉 <strong>Use code \"<em>Welcome10\" </em> to get 10% OFF</strong> on your first order above ₹999</p><p><br></p><p>🎁 <strong>Get a Free Stylish Bag</strong> on purchases over ₹5000</p>"
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "review",
+                    "instanceId": "design2",
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "rich-text-block",
+                    "instanceId": "design1",
+                    "options": {
+                        "collapsible": true,
+                        "defaultExpanded": false
+                    },
+                    "source": {
+                        "title": "More information",
+                        "html": "<p><strong style=\"color: rgb(47, 99, 107);\">Manufactured &amp; Marketed by:</strong></p><p><span style=\"color: rgb(47, 99, 107);\">House Of KB</span></p><p><span style=\"color: rgb(47, 99, 107);\">Building No. 551, 16th Main, 15th Cross Rd, Sector 4, HSR Layout, Bengaluru, KA - 560102 , IN.</span></p><p><br></p><p><strong style=\"color: rgb(47, 99, 107);\">Country of Origin:</strong></p><p><span style=\"color: rgb(47, 99, 107);\">India</span></p><p><br></p><p><strong style=\"color: rgb(47, 99, 107);\">Customer Support :</strong></p><p><span style=\"color: rgb(47, 99, 107);\">+91-7483652730</span></p><p><span style=\"color: rgb(47, 99, 107);\">support@9shineslabel.com</span></p>"
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "related-products",
+                    "instanceId": "design3",
+                    "source": {
+                        "title": "YOU MAY ALSO LIKE",
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "custom-variant",
+                    "instanceId": "design1",
+                    "title": "",
+                    "value": {
+                        "key": "",
+                        "namespace": ""
+                    },
+                    "variant": {
+                        "key": "",
+                        "namespace": ""
+                    },
+                    "visibility": {
+                        "hide": true
+                    },
+                    "selected": false
+                },
+                {
+                    "componentId": "image-banner-block",
+                    "instanceId": "design1",
+                    "source": {
+                        "image": ""
+                    },
+                    "visibility": {
+                        "hide": true
+                    },
+                    "selected": false
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "cart",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "search-button": {},
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "discount-progress-bar",
+                    "instanceId": "design1",
+                    "source": {},
+                    "visibility": {
+                        "hide": true
+                    }
+                },
+                {
+                    "style": {
+                        "textAlign": "left",
+                        "fontWeight": "bold",
+                        "fontSize": 25
+                    },
+                    "componentId": "cart-products",
+                    "instanceId": "design3",
+                    "source": {
+                        "title": "My Bag"
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "coupen-code-block",
+                    "instanceId": "design2",
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "price-details",
+                    "instanceId": "design2",
+                    "source": {
+                        "title": null
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "related-products",
+                    "instanceId": "design3",
+                    "source": {
+                        "title": "Related Products",
+                        "show-wishlist": true,
+                        "show-add-to-cart": false,
+                        "show-variants": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "search",
+        "layout": {
+            "header": {},
+            "bottom-header": {},
+            "footer": {},
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "recent-searches",
+                    "instanceId": "design1",
+                    "source": {},
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "related-products",
+                    "instanceId": "design2",
+                    "source": {
+                        "title": "Related Products",
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "wishlist-login-message",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "search-button": {},
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "bottom-header": {},
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "login-message",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "You're not signed in",
+                        "description": "Please sign into account to add products to Favorites.",
+                        "buttonName": "SIGN IN NOW!"
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "componentId": "related-products",
+                    "instanceId": "design2",
+                    "source": {
+                        "title": "Related Products",
+                        "collection": "long-t-shirts",
+                        "limit": 10,
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "search-product-list",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "search-title": {},
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "search-title",
+                            "key": "search-title"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "search-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "fontSize": 17,
+                        "padding": {
+                            "left": 7
+                        }
+                    },
+                    "search-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "bottom-header": {},
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "product-list-component",
+                    "instanceId": "design3",
+                    "source": {
+                        "show-wishlist": true,
+                        "show-add-to-cart": false,
+                        "show-variants": false
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "my-account",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "search-button": {},
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {
+                        "backgroundColor": "#000000",
+                        "color": "#ffffff"
+                    },
+                    "componentId": "account-detail-component",
+                    "instanceId": "design2",
+                    "source": {},
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "account-menu-component",
+                    "instanceId": "design2",
+                    "options": {
+                        "address-button": {
+                            "icon": null,
+                            "screenId": "address",
+                            "kind": "link_button",
+                            "label": "Shipping Addresses",
+                            "show-total-count": true
+                        },
+                        "order-history-button": {
+                            "icon": null,
+                            "screenId": "orderHistory",
+                            "kind": "link_button",
+                            "label": "My Orders",
+                            "show-total-count": true
+                        },
+                        "profile-button": {
+                            "icon": null,
+                            "screenId": "profile",
+                            "kind": "link_button",
+                            "label": "Settings",
+                            "description": "Profile"
+                        },
+                        "referral-button": {
+                            "icon": null,
+                            "screenId": "web-view",
+                            "kind": "link_button",
+                            "label": "Referrals",
+                            "description": null
+                        },
+                        "review-button": {
+                            "icon": null,
+                            "screenId": "web-view",
+                            "kind": "link_button",
+                            "label": "Reviews",
+                            "description": null
+                        },
+                        "reward-button": {
+                            "icon": null,
+                            "screenId": "web-view",
+                            "kind": "link_button",
+                            "label": "Rewards",
+                            "description": null
+                        }
+                    },
+                    "source": {
+                        "lists": [
+                            {
+                                "kind": "link_button",
+                                "key": "order-history-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "address-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "profile-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "reward-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "referral-button"
+                            },
+                            {
+                                "kind": "link_button",
+                                "key": "review-button"
+                            }
+                        ]
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "policy-component",
+                    "instanceId": "design1",
+                    "source": {},
+                    "visibility": {
+                        "hide": true
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "logout-component",
+                    "instanceId": "design1",
+                    "source": {},
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "manage-address",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Manage Address"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "fontSize": 17,
+                        "padding": {
+                            "left": 7
+                        }
+                    },
+                    "search-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "order-history",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "search-button": {},
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "order-list-component",
+                    "instanceId": "design2",
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "order-detail",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "order-detail-component",
+                    "instanceId": "design2",
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "my-profile",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "search-button": {},
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {},
+            "blocks": [
+                {
+                    "componentId": "user-detail-component",
+                    "instanceId": "design2",
+                    "source": {},
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "my-wishlist",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Favorites"
+                    },
+                    "search-button": {
+                        "icon": "search-1",
+                        "screenId": "search",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "search-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "search-button": {},
+                    "screen-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "fontSize": 17,
+                        "padding": {
+                            "left": 7
+                        }
+                    },
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "product-list-component",
+                    "instanceId": "design2",
+                    "source": {
+                        "show-add-to-cart": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "pages",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "pages-title": {}
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "pages-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "pages-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "fontSize": 17,
+                        "padding": {
+                            "left": 7
+                        }
+                    },
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "home",
+        "layout": {
+            "header": {
+                "options": {
+                    "logo": {
+                        "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-77b612cb-b2d1-4965-a131-56b560581a2d-9shinesLabelLogo.png?v=1753437673"
+                    },
+                    "search-input": {
+                        "show-voice-search": false,
+                        "placeholder": "Search products here",
+                        "instanceId": "design2"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "image",
+                            "key": "logo"
+                        },
+                        {
+                            "kind": "input",
+                            "key": "search-input"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "logo": {},
+                    "search-input": {
+                        "margin": {
+                            "left": 10,
+                            "top": 5,
+                            "bottom": 5
+                        }
+                    },
+                    "cart-button": {},
+                    "root": {}
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {
+                "componentId": "footer-navigation",
+                "instanceId": "design5",
+                "options": {
+                    "home-button": {
+                        "icon": "home-1",
+                        "screenId": "home",
+                        "kind": "home",
+                        "label": "Home"
+                    },
+                    "menu-button": {
+                        "icon": "cart-2",
+                        "screenId": "menu",
+                        "kind": "menu",
+                        "label": "Shop"
+                    },
+                    "cart-button": {
+                        "icon": "cart-1",
+                        "screenId": "cart",
+                        "kind": "cart",
+                        "label": "Bag"
+                    },
+                    "wishlist-button": {
+                        "icon": "wishlist-1",
+                        "screenId": "wishlist",
+                        "kind": "wishlist",
+                        "label": "Favorites"
+                    },
+                    "account-button": {
+                        "icon": "account-1",
+                        "screenId": "account",
+                        "kind": "link_button",
+                        "label": "Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "home-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "menu-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "cart-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "wishlist-button"
+                        },
+                        {
+                            "kind": "link_button",
+                            "key": "account-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "home-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "menu-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "wishlist-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "cart-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "account-button": {
+                        "backgroundColor": "#2F636B",
+                        "color": "#2F636B"
+                    },
+                    "root": {
+                        "color": "#868686",
+                        "backgroundColor": "#FFFFFF"
+                    }
+                },
+                "source": {},
+                "visibility": {
+                    "hide": false
+                },
+                "kind": "row"
+            },
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "announcement-bar-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "Announcement Bar",
+                        "lists": [
+                            {
+                                "title": "Top Combo Offers",
+                                "backgroundColor": "#2f636b",
+                                "textColor": "#ffffff",
+                                "type": "text",
+                                "description": "3@2199 Nighties • 3@2499 AOP• 3@1699 Tees",
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Banner 2",
+                                "backgroundColor": "#2f636b",
+                                "textColor": "#ffffff",
+                                "type": "text",
+                                "description": "Buy 3 Polo Nighties starting at ₹1699!",
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Banner 3",
+                                "backgroundColor": "#2f636b",
+                                "textColor": "#FFFFFF",
+                                "type": "text",
+                                "description": "Welcome10: 10% OFF on first order 999",
+                                "visibility": {
+                                    "hide": false
+                                }
+                            }
+                        ]
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {
+                        "height": 500
+                    },
+                    "componentId": "sliding-banner-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "Main Banner - Slideshow",
+                        "lists": [
+                            {
+                                "title": "Banner 1",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-a2f821aa-daac-4410-863c-15433289b443-WhatsAppImage20250725at33618PM3.jpg?v=1753438553",
+                                "link": {
+                                    "value": "solid-nighty",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Banner 2",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-d6f0caaf-423c-4081-bdca-a8788073d5bc-WhatsAppImage20250725at33618PM2.jpg?v=1753438564",
+                                "link": {
+                                    "value": "satin-designer-nighty",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Banner 3",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-da59bdf2-c7d5-4bbd-a225-a7dea1e3d203-WhatsAppImage20250725at33618PM1.jpg?v=1753438604",
+                                "link": {
+                                    "value": "sleeveless-nighty",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Banner 4",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-dda2cb1d-c4d4-4ce6-b31a-101feceeba6e-WhatsAppImage20250725at33618PM.jpg?v=1753438618",
+                                "link": {
+                                    "value": "frocks-style-nighties",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Banner 5",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-df4c1fc5-c14b-4ff7-95cd-d6cf07f76f8e-c0b71e9f8e974b8ca4b9746edea26a7cArtboard68da810f862e24adba176db49fce59b9e.webp?v=1741761904",
+                                "link": {
+                                    "value": "new-arrivals",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            }
+                        ]
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "carousel-promotion-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "NEW DROPS",
+                        "description": "Explore our latest arrivals designed for comfort and style. From trendy nighties to elegant kaftans, discover new pieces that redefine your nightwear collection.",
+                        "lists": [],
+                        "count": 10,
+                        "collection": "new-arrivals",
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "carousel-banner-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "SHOP BY CATEGORIES",
+                        "buttonName": "",
+                        "lists": [
+                            {
+                                "title": "Solid Nighties",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-68e39aba-d9c6-4c27-9ce9-883c71a24753-rimobileappbuilder6dcfe43c78aa4bd59361b32ff9962618fd2c8b5f69534def87767d518f4683e9fe52ea27150a4dd1a3d0798fbb348cebpage4ce96e.webp?v=1749104396",
+                                "link": {
+                                    "value": "solid-nighty",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Long T-Shirt",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-395d06af-4087-4a99-bbf1-aa13d99738b1-rimobileappbuilderafce44b128144fcf9f649d099389d026f3fd1f033db341d29a192ffe50875f976eed84882a824b1d98b43ac3c95382b51L9A830520.webp?v=1749104423",
+                                "link": {
+                                    "value": "long-t-shirts",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Alpine Nighty",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-bff60b5b-c4f3-4282-a7be-a24cab17229c-rimobileappbuilder067c852b31294aca9e965247f506869e0c0dc390bb4642e4b2eb82fc392ba302c07136ab898848dda3643880107b4339BD0A7322.webp?v=1749104475",
+                                "link": {
+                                    "value": "alpine-designer-nighties",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Denim Nighty",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-bd68e879-fa86-430e-bf95-b8de2086464f-rimobileappbuilderb34b8f3355614c27a634394717131c65d61d57a350d844b2bd87d28d56e9609f5354181c4c3e4c93a3af2196b2fbe4e11L9A7353.webp?v=1749104503",
+                                "link": {
+                                    "value": "denim-nighty",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Pure Cotton Nighty",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-76cc1358-210c-4302-aab8-032b3d3f2c59-rimobileappbuilder28dea4f6682f412b81ce70a695d7b9d3948afaf3d8dd41b8a625f3ff0d73ad372d8f3e6e54e5430c87e4fac9fc46ee3dBD0A4216.webp?v=1749104515",
+                                "link": {
+                                    "value": "pure-cotton-nighty",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Sleevless Nighty",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-8058c201-c24b-4196-862f-40c99e09190f-rimobileappbuilderb6c8919a34bb471fb83f165784da406ae7c8b5cfd5d342dca3d7e4c26631a32c46e0933681f748f897c06da3863dc34d851BMmin.webp?v=1749104529",
+                                "link": {
+                                    "value": "sleeveless-nighty",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "title": "Banner 7",
+                                "type": "image",
+                                "image": "",
+                                "link": {
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": true
+                                }
+                            },
+                            {
+                                "title": "Banner 8",
+                                "type": "image",
+                                "image": "",
+                                "link": {
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": true
+                                }
+                            },
+                            {
+                                "title": "Banner 9",
+                                "type": "image",
+                                "image": "",
+                                "link": {
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": true
+                                }
+                            },
+                            {
+                                "title": "Banner 10",
+                                "type": "image",
+                                "image": "",
+                                "link": {
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": true
+                                }
+                            }
+                        ],
+                        "displayLimit": 4,
+                        "link": {
+                            "value": "",
+                            "kind": "collection"
+                        }
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "fixed-promotion-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "Zipless Feeding Nighty",
+                        "description": "",
+                        "lists": [],
+                        "count": 6,
+                        "collection": "maternity-short-nighty",
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "carousel-promotion-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "SHOP BY CATEGORIE",
+                        "description": "",
+                        "lists": [],
+                        "count": 10,
+                        "collection": "long-t-shirts",
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "fixed-promotion-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "Zipless Feeding Nigh",
+                        "description": "",
+                        "lists": [],
+                        "count": 52,
+                        "collection": "nightwear-sets",
+                        "show-wishlist": true,
+                        "show-add-to-cart": true,
+                        "show-variants": true
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "custom-banner-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "SHOP BY CATEG",
+                        "lists": [
+                            {
+                                "rowContent": [
+                                    {
+                                        "title": "Banner 1",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    },
+                                    {
+                                        "title": "Banner 2",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    },
+                                    {
+                                        "title": "Banner 3",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    }
+                                ],
+                                "visibility": {
+                                    "hide": true
+                                }
+                            },
+                            {
+                                "rowContent": [
+                                    {
+                                        "title": "Ziplee",
+                                        "type": "image",
+                                        "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-36353625-a3e7-4c34-86a2-cdcb597613c5-CollectionBanner.png?v=1753441262",
+                                        "colspan": 4,
+                                        "rowspan": 2,
+                                        "link": {
+                                            "value": "maternity-short-nighty",
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": false
+                                        }
+                                    },
+                                    {
+                                        "title": "ok",
+                                        "type": "image",
+                                        "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-5efcd3ca-2523-48a3-bc54-ff5f0412fac3-WhatsAppImage20250725at33618PM2.jpg?v=1753441358",
+                                        "colspan": 1,
+                                        "rowspan": 2,
+                                        "link": {
+                                            "value": "",
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": false
+                                        }
+                                    },
+                                    {
+                                        "title": "0",
+                                        "type": "image",
+                                        "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-ae75ba0d-e0a1-447a-9b7d-fdaf5f46ae6e-WhatsAppImage20250725at33618PM2.jpg?v=1753441677",
+                                        "colspan": 1,
+                                        "rowspan": 2,
+                                        "link": {
+                                            "value": "maternity-short-nighty",
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": false
+                                        }
+                                    }
+                                ],
+                                "visibility": {
+                                    "hide": false
+                                }
+                            },
+                            {
+                                "rowContent": [
+                                    {
+                                        "title": "Banner 1",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    },
+                                    {
+                                        "title": "Banner 2",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    },
+                                    {
+                                        "title": "Banner 3",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    }
+                                ],
+                                "visibility": {
+                                    "hide": true
+                                }
+                            },
+                            {
+                                "rowContent": [
+                                    {
+                                        "title": "Banner 1",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    },
+                                    {
+                                        "title": "Banner 2",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    },
+                                    {
+                                        "title": "Banner 3",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    }
+                                ],
+                                "visibility": {
+                                    "hide": true
+                                }
+                            },
+                            {
+                                "rowContent": [
+                                    {
+                                        "title": "Banner 1",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    },
+                                    {
+                                        "title": "Banner 2",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    },
+                                    {
+                                        "title": "Banner 3",
+                                        "type": "image",
+                                        "colspan": 1,
+                                        "rowspan": 1,
+                                        "link": {
+                                            "kind": "collection"
+                                        },
+                                        "visibility": {
+                                            "hide": true
+                                        }
+                                    }
+                                ],
+                                "visibility": {
+                                    "hide": true
+                                }
+                            }
+                        ],
+                        "columnCount": 5
+                    },
+                    "visibility": {
+                        "hide": true
+                    }
+                },
+                {
+                    "style": {},
+                    "componentId": "fixed-banner-component",
+                    "instanceId": "design1",
+                    "source": {
+                        "title": "Gold",
+                        "buttonName": "View all",
+                        "lists": [
+                            {
+                                "title": "Banner 1",
+                                "type": "image",
+                                "image": "https://cdn.shopify.com/s/files/1/0588/1030/2617/files/ri-mobile-app-builder-e6f5b786-a268-488b-b804-cab50c639fbc-WhatsAppImage20250725at33618PM2.jpg?v=1753442245",
+                                "video": "",
+                                "link": {
+                                    "value": "maternity-kaftan",
+                                    "kind": "collection"
+                                },
+                                "visibility": {
+                                    "hide": false
+                                }
+                            }
+                        ]
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "login",
+        "instanceId": "design3",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "register",
+        "instanceId": "design3",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {},
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "form-component",
+                    "lists": [
+                        {
+                            "errorMessage": "Please enter your name",
+                            "fieldType": "form-field",
+                            "label": "Name",
+                            "name": "firstName",
+                            "pattern": null,
+                            "required": true,
+                            "type": "text",
+                            "visibility": {
+                                "hide": false
+                            }
+                        },
+                        {
+                            "errorMessage": "Please enter your email",
+                            "fieldType": "form-field",
+                            "label": "Email",
+                            "name": "email",
+                            "pattern": null,
+                            "required": true,
+                            "type": "email",
+                            "visibility": {
+                                "hide": false
+                            }
+                        },
+                        {
+                            "errorMessage": "Please enter your mobile number",
+                            "fieldType": "form-field",
+                            "label": "Mobile Number",
+                            "name": "phone",
+                            "pattern": null,
+                            "required": true,
+                            "type": "number",
+                            "visibility": {
+                                "hide": false
+                            }
+                        },
+                        {
+                            "errorMessage": "",
+                            "fieldType": "metafield",
+                            "label": "Date of Birth",
+                            "name": "date_of_birth",
+                            "key": "date_of_birth",
+                            "namespace": "custom",
+                            "pattern": null,
+                            "required": false,
+                            "type": "date",
+                            "visibility": {
+                                "hide": false
+                            }
+                        },
+                        {
+                            "errorMessage": "Please enter your password",
+                            "fieldType": "form-field",
+                            "label": "Password",
+                            "name": "password",
+                            "required": true,
+                            "type": "password",
+                            "visibility": {
+                                "hide": false
+                            }
+                        }
+                    ],
+                    "source": {
+                        "buttonName": "SIGN UP"
+                    },
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "forgot-password",
+        "instanceId": "design2",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "home",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {}
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "update-profile",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Update Profile"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "notification",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Notification"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "apply-coupen",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-1",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Apply Coupen"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "global-config",
+        "instances": [
+            {
+                "componentId": "fixed-banner-component",
+                "instanceId": "design3"
+            },
+            {
+                "componentId": "sliding-banner-component",
+                "instanceId": "design1"
+            },
+            {
+                "componentId": "custom-banner-component",
+                "instanceId": "design2"
+            },
+            {
+                "componentId": "carousel-banner-component",
+                "instanceId": "design1"
+            },
+            {
+                "componentId": "fixed-promotion-component",
+                "instanceId": "design3"
+            },
+            {
+                "componentId": "carousel-promotion-component",
+                "instanceId": "design3"
+            },
+            {
+                "componentId": "grid-carousel-promotion-component",
+                "instanceId": "design1"
+            },
+            {
+                "componentId": "icon-info-component",
+                "instanceId": "design2"
+            },
+            {
+                "componentId": "media-tab-scroller-component",
+                "instanceId": "design1"
+            },
+            {
+                "componentId": "rich-text-block",
+                "instanceId": "design3"
+            },
+            {
+                "componentId": "product",
+                "instanceId": "design4",
+                "source": {
+                    "show-ratings-for-all": false,
+                    "show-wishlist": true,
+                    "show-add-to-cart": true,
+                    "show-variants": true
+                }
+            }
+        ]
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "add-review",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Add Review"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "fontSize": 17
+                    },
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "review",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    },
+                    "screen-title": {
+                        "numberOfLines": 1,
+                        "text": "Review"
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        },
+                        {
+                            "kind": "text",
+                            "key": "screen-title"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "fontSize": 17
+                    },
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    },
+    {
+        "version": "vbEVJcmev",
+        "createdAt": "2024-05-07T13:13:20.596Z",
+        "updatedAt": "2024-10-23T11:30:02.887Z",
+        "id": "return-order",
+        "layout": {
+            "header": {
+                "options": {
+                    "back-button": {
+                        "icon": "back-button-2",
+                        "screenId": "back",
+                        "kind": "link_button",
+                        "label": ""
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "kind": "link_button",
+                            "key": "back-button"
+                        }
+                    ],
+                    "kind": "row"
+                },
+                "style": {
+                    "back-button": {},
+                    "screen-title": {},
+                    "root": {
+                        "backgroundColor": "#F9F9F9"
+                    }
+                },
+                "source": {},
+                "kind": "row"
+            },
+            "footer": {},
+            "blocks": [
+                {
+                    "style": {},
+                    "componentId": "return-order-component",
+                    "instanceId": "design1",
+                    "visibility": {
+                        "hide": false
+                    }
+                }
+            ],
+            "kind": "column"
+        },
+        "style": {},
+        "type": "screens"
+    }
+]

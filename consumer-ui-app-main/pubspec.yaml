@@ -1,0 +1,323 @@
+name: black_locust
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.1+7
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.17 # help us to use SVG in our app
+  http: ^1.3.0
+  get: ^4.7.2
+  carousel_slider: ^5.0.0
+  # http_interceptor: ^1.0.2
+  intl: ^0.20.2
+  # google_fonts: ^4.0.4
+  # device_preview: ^0.7.1
+  # share: ^2.0.1
+  get_storage: ^2.1.1
+  url_launcher: ^6.3.1
+  visibility_detector: ^0.4.0+2
+  flutter_staggered_grid_view: ^0.7.0
+  integration_package:
+    path: '../integration-package-main'
+    # path: '../integration-package'
+    #  path: '../integration'
+  b2b_graphql_package:
+     path: '../graphql-package-main'
+    # path: '../graphql'
+    # path: '../graphQl_IA'
+    # path: '../toautomation-package'
+    # path: '../toautomation-graphql-package'
+    # path: '../toAutomation-graphql-new-package'
+    # path: '../shopify-package'
+    # path: '../shopify-graphql-package'
+    # path: '../graphql-package'
+    # path: '../GraphQl_DJ'
+  # b2b_graphql_package: ^1.0.130
+  graphql_flutter: ^5.0.0
+  cached_network_image: ^3.4.1
+  # syncfusion_flutter_sliders: ^21.2.5
+  firebase_core: ^4.1.1
+  firebase_auth: ^6.1.0
+  firebase_messaging: ^16.0.2
+  flutter_local_notifications: ^19.4.2
+  razorpay_flutter: ^1.4.0
+  html: ^0.15.5
+  geocoding: ^4.0.0
+  sms_autofill: ^2.4.1
+  share_plus: ^12.0.0
+  geolocator: ^14.0.2
+  new_version_plus: ^0.1.0
+  shared_preferences: ^2.5.3
+  path_provider: ^2.1.5
+  # otp_text_field: ^1.1.3
+  webview_flutter: ^4.10.0
+  #  webview_flutter: ^4.0.1
+  flutter_html: ^3.0.0-beta.2
+  # geolocator: ^13.0.2
+  # geocoding: ^3.0.0
+  # social_share: ^2.2.1 
+  blaze_sdk_flutter: ^0.8.0
+
+  
+ 
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  # uni_links: ^0.5.1
+  image_picker: ^1.1.2
+  dio: ^5.8.0+1
+  cupertino_icons: ^1.0.8
+  # gallery_saver: ^2.3.2
+  # connectivity_plus_web: ^1.2.5
+  # share_plus_web: ^3.1.0
+  app_links: ^6.4.0
+  firebase_analytics: ^12.0.2
+  video_player: ^2.9.3
+  chewie: ^1.10.0
+  speech_to_text: ^7.0.0
+  permission_handler: ^12.0.1
+  audioplayers: ^6.5.0
+  recaptcha_enterprise_flutter: ^18.7.1
+  dotted_line: ^3.2.2
+  scratcher: ^2.5.0  # Best scratch card package
+  flutter_fortune_wheel: ^1.3.1  # Best spin wheel package
+  confetti: ^0.7.0  # Confetti animation for winning
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_native_splash: ^2.4.5
+  flutter_launcher_icons: ^0.14.3
+dependency_overrides:
+  csslib: ^1.0.2
+
+flutter_native_splash:
+  # color: "#88ae40" 
+  # color: "#000000"
+  color: "#ffffff"
+  # color: "#35353B" #dilip jewellers
+  # image: assets/images/vilanlogo1.png
+  # image: assets/images/envie-logo.png
+  # image: assets/images/shopify_logo.png
+  # image: assets/images/rietail_logo.png
+  # image: assets/images/slumberJill.png
+  # image: assets/images/house_of_mahnots_splash.png
+  # image: assets/images/samurai_splash.png
+  # image: assets/images/brand_shoppe_logo.png
+  # image: assets/images/s_p_pharma.png
+  # image: assets/images/tsg_breeze_splash.png
+  # image: assets/images/RInteger_logo.png
+  # image: assets/images/komal_uniform.png
+  image: assets/images/9_shines_label.png
+  # image: assets/images/syndicate.png
+  # image: assets/images/italian_colony_splash_light.png
+  # image: assets/images/dilip_jewellers_splash.png
+  # image: assets/images/komalLogo.jpg
+  # image: assets/images/blankStore_logo.png
+  # image: assets/images/shoppingstori_splash.png
+  # image: assets/images/suxxus_icon.png
+  # image: assets/images/kamaali_splash.png
+  # image: assets/images/engyne_splash.png
+  # image: assets/images/parc_elles_splash.png
+  # image: assets/images/military_marvel.png
+  # image: assets/images/carlo_logo.png
+  # image: assets/images/never_neud_logo.png
+  # image: assets/images/rockstar_splash.png
+  # image: assets/images/daksneo_splash.png
+  # color_dark: "#88ae40"
+  # color_dark: "#000000"
+  color_dark: "#ffffff"
+  # color_dark: "#35353B" #dilip jewellers
+  # color_dark: "#35353B" #dilip jewellers
+  # image_dark: assets/images/vilanlogo1.png
+  # image_dark: assets/images/envie-logo.png
+  # image_dark: assets/images/shopify_logo.png
+  # image_dark: assets/images/rietail_logo.png
+  # image_dark: assets/images/military_marvel.png
+  # image_dark: assets/images/parc_elles_splash.png
+  # image_dark: assets/images/engyne_splash.png
+  # image_dark: assets/images/suxxus_icon.png
+  # image_dark: assets/images/italian_colony_splash_dark.png
+  # image_dark: assets/images/syndicate.png
+  # image_dark: assets/images/komal_uniform.png
+  image_dark: assets/images/9_shines_label.png
+  # image_dark: assets/images/tsg_breeze_splash.png
+  # image_dark: assets/images/RInteger_logo.png
+  # image_dark: assets/images/dilip_jewellers_splash.png
+  # image_dark: assets/images/komalLogo.jpg
+  # image_dark: assets/images/blankStore_logo.png
+  # image_dark: assets/images/s_p_pharma.png
+  # image_dark: assets/images/shoppingstori_splash.png
+  # image_dark: assets/images/brand_shoppe_logo.png
+  # image_dark: assets/images/slumberJill.png
+  # image_dark: assets/images/house_of_mahnots_splash.png
+  # image_dark: assets/images/samurai_splash.png
+  # image_dark: assets/images/carlo_logo.png
+  # image_dark: assets/images/kamaali_splash.png
+  # image_dark: assets/images/never_neud_logo.png
+  # image_dark: assets/images/rockstar_splash.png
+  # image_dark: assets/images/daksneo_splash.png
+  android: true
+  ios: true
+  
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  # image_path: "assets/images/vilan_icon.png" 
+  # image_path: "assets/images/envie_icon.png" 
+  # image_path: "assets/images/shopify_icon.png" 
+  # image_path: "assets/images/house_of_mahnots.png" 
+  # image_path: "assets/images/slumberJill.png" 
+  # image_path: "assets/images/samurai_splash.png" 
+  # image_path: "assets/images/italian_colony_logo.png" 
+  # image_path: "assets/images/syndicate.png" 
+  # image_path: "assets/images/komal_uniform.png" 
+  image_path: "assets/images/9_shines_label.png" 
+  # image_path: "assets/images/tsg_breeze_logo.png" 
+  # image_path: "assets/images/RInteger_logo.png" 
+  # image_path: "assets/images/s_p_pharma.png" 
+  # image_path: "assets/images/dilip_jewellers_logo.png" 
+  # image_path: assets/images/komalLogo.jpg
+  # image_path: assets/images/blankStore_logo.png
+  # image_path: "assets/images/shoppingstori_logo.png" 
+  # image_path: "assets/images/rietail_logo.png" 
+  # image_path: "assets/images/brand_shoppe_logo.png" 
+  # image_path: "assets/images/parc_elles_logo.png" 
+  # image_path: "assets/images/military_marvel.png" 
+  # image_path: "assets/images/engyne_logo.png" 
+  # image_path: "assets/images/kamaali_logo.png" 
+  # image_path: "assets/images/carlo_icon.png" 
+  # image_path: "assets/images/never_neud_logo.png" 
+  # image_path: "assets/images/rockstar_logo.png" 
+  # image_path: "assets/images/daksneo_logo.png" 
+  # adaptive_icon_background: "#000000"
+  adaptive_icon_background: "#ffffff"
+  # adaptive_icon_background: "#35353B"  #dilip jewellers
+  # adaptive_icon_background: "#feeea6" 
+  #9 shines label background: "#feeea6"
+  # adaptive_icon_foreground: "assets/images/vilan_icon.png"
+  # adaptive_icon_foreground: "assets/images/envie_icon.png"
+  # adaptive_icon_foreground: "assets/images/shopify_icon.png"
+  # adaptive_icon_foreground: "assets/images/italian_colony_logo.png"
+  # adaptive_icon_foreground: "assets/images/syndicate.png"
+  # adaptive_icon_foreground: "assets/images/komal_uniform.png"
+  adaptive_icon_foreground: "assets/images/9_shines_label.png"
+  # adaptive_icon_foreground: "assets/images/RInteger_logo.png"
+  # adaptive_icon_foreground: "assets/images/tsg_breeze_logo.png"
+  # adaptive_icon_foreground: "assets/images/dilip_jewellers_logo.png"
+  # adaptive_icon_foreground: assets/images/komalLogo.jpg
+  # adaptive_icon_foreground: assets/images/blankStore_logo.png
+  # adaptive_icon_foreground: "assets/images/s_p_pharma.png"
+  # adaptive_icon_foreground: "assets/images/shoppingstori_logo.png"
+  # adaptive_icon_foreground: "assets/images/rietail_logo.png"
+  # adaptive_icon_foreground: "assets/images/brand_shoppe_logo.png"
+  # adaptive_icon_foreground: "assets/images/house_of_mahnots.png"
+  # adaptive_icon_foreground: "assets/images/slumberJill.png"
+  # adaptive_icon_foreground: "assets/images/samurai_splash.png"
+  # adaptive_icon_foreground: "assets/images/kamaali_logo.png"
+  # adaptive_icon_foreground: "assets/images/military_marvel.png"
+  # adaptive_icon_foreground: "assets/images/parc_elles_logo.png" 
+  # adaptive_icon_foreground: "assets/images/engyne_logo.png"
+  # adaptive_icon_foreground: "assets/images/carlo_icon.png"
+  # adaptive_icon_foreground: "assets/images/never_neud_logo.png"
+  # adaptive_icon_foreground: "assets/images/rockstar_logo.png"
+  # adaptive_icon_foreground: "assets/images/daksneo_logo.png"
+  
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/config/
+    - assets/images/svg/
+ 
+    
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Poppins,sans-serif
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+          weight: 700
+    - family: Avenir,sans-serif
+      fonts:
+        - asset: assets/fonts/avenir/AvenirNext-Regular.ttf
+        - asset: assets/fonts/avenir/AvenirNext-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/avenir/AvenirNext-DemiBold.ttf
+        - asset: assets/fonts/avenir/AvenirNext-Bold.ttf
+          weight: 700
+    - family: Tenor Sans,sans-serif
+      fonts:
+        - asset: assets/fonts/tenor-sans/TenorSans-Regular.ttf
+        - asset: assets/fonts/tenor-sans/TenorSans-Regular.ttf
+          weight: 600
+        - asset: assets/fonts/tenor-sans/TenorSans-Regular.ttf
+        - asset: assets/fonts/tenor-sans/TenorSans-Regular.ttf
+          weight: 700
+    - family: Helvetica Neue, Arial
+      fonts:
+        - asset: assets/fonts/helveticaNeue/HelveticaNeue-Regular.ttf
+        - asset: assets/fonts/helveticaNeue/HelveticaNeue-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/helveticaNeue/HelveticaNeue-Thin.ttf
+        - asset: assets/fonts/helveticaNeue/HelveticaNeue-Bold.ttf
+          weight: 700
+    - family: Crimson Text, Serif
+      fonts:
+        - asset: assets/fonts/crimson_text/CrimsonText-Regular.ttf
+        - asset: assets/fonts/crimson_text/CrimsonText-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/crimson_text/CrimsonText-Bold.ttf
+        - asset: assets/fonts/crimson_text/CrimsonText-Bold.ttf
+          weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

@@ -1,0 +1,2 @@
+D:/WEB_APPLICATIONS_React/DilipJewellery/MobileApp_DJ/android/app/.cxx/Debug/5e6w2l5r/x86_64/CMakeFiles/edit_cache.dir
+D:/WEB_APPLICATIONS_React/DilipJewellery/MobileApp_DJ/android/app/.cxx/Debug/5e6w2l5r/x86_64/CMakeFiles/rebuild_cache.dir
