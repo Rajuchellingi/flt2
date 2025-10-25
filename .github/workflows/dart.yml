@@ -7,6 +7,7 @@ jobs:
   build-ios:
     name: 🎉 iOS Build
     runs-on: macos-latest
+
     steps:
       - uses: actions/checkout@v3
 
@@ -23,34 +24,36 @@ jobs:
       
       - name: Install CocoaPods
         run: gem install cocoapods
+
       - name: Install Flutter dependencies
+        working-directory: flutter_app
         run: flutter pub get
         
       - name: Update CocoaPods repos
+        working-directory: flutter_app/ios
         run: pod repo update
-        working-directory: ios
-        working-directory: ios
 
       - name: Build iOS
+        working-directory: flutter_app
         run: flutter build ios --release --no-codesign
 
       - name: Create Payload directory
+        working-directory: flutter_app/build/ios/iphoneos
         run: mkdir Payload
-        working-directory: build/ios/iphoneos
 
       - name: Move app to Payload
+        working-directory: flutter_app/build/ios/iphoneos
         run: mv Runner.app Payload/
-        working-directory: build/ios/iphoneos
 
       - name: Create IPA
+        working-directory: flutter_app/build/ios/iphoneos
         run: zip -qq -r -9 FlutterIpaExport.ipa Payload
-        working-directory: build/ios/iphoneos
 
       - name: Upload IPA
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: build/ios/iphoneos/FlutterIpaExport.ipa
+          file: flutter_app/build/ios/iphoneos/FlutterIpaExport.ipa
           tag: v1.0
           overwrite: true
           body: "This is first release"
