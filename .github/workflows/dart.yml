@@ -47,7 +47,7 @@ jobs:
         run: zip -qq -r -9 FlutterIpaExport.ipa Payload
       
       - name: Upload IPA as artifact
-        uses: actions/upload-artifact@v4  # ✅ Updated to v4
+        uses: actions/upload-artifact@v4  # ✅ Updated to v
         with:
           name: ios-build-${{ github.run_number }}
           path: build/ios/iphoneos/FlutterIpaExport.ipa
