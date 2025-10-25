@@ -72,12 +72,84 @@ jobs:
           rm -rf ~/Library/Developer/Xcode/DerivedData
         working-directory: consumer-ui-app-main
 
-      - name: Update Firebase SDK Version
+      - name: Setup Firebase and iOS configuration
         run: |
           cd ios
-          echo "platform :ios, '14.0'" > Podfile.properties.json
-          echo "firebase_analytics_version=10.7.0" >> Podfile.properties.json
+          cat > Podfile << 'EOF'
+          platform :ios, '14.0'
+
+          # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
+          ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
+          source 'https://cdn.cocoapods.org/'
+
+          project 'Runner', {
+            'Debug' => :debug,
+            'Profile' => :release,
+            'Release' => :release,
+          }
+
+          def flutter_root
+            generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
+            unless File.exist?(generated_xcode_build_settings_path)
+              raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get is executed first"
+            end
+
+            File.foreach(generated_xcode_build_settings_path) do |line|
+              matches = line.match(/FLUTTER_ROOT\=(.*)/)
+              return matches[1].strip if matches
+            end
+            raise "FLUTTER_ROOT not found in #{generated_xcode_build_settings_path}"
+          end
+
+          require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
+
+          flutter_ios_podfile_setup
+
+          target 'Runner' do
+            use_frameworks!
+            use_modular_headers!
+
+            # Firebase specific pods
+            pod 'Firebase/Core', '~> 10.12.0'
+            pod 'Firebase/Analytics', '~> 10.12.0'
+            pod 'Firebase/Auth', '~> 10.12.0'
+            pod 'Firebase/Messaging', '~> 10.12.0'
+
+            flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+          end
+
+          post_install do |installer|
+            installer.pods_project.targets.each do |target|
+              flutter_additional_ios_build_settings(target)
+              target.build_configurations.each do |config|
+                config.build_settings['ENABLE_BITCODE'] = 'NO'
+                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+                # Exclude arm64 architecture for simulator builds
+                config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+                # Add privacy descriptions
+                config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
+                  '$(inherited)',
+                  'PERMISSION_CAMERA=1',
+                  'PERMISSION_PHOTOS=1',
+                  'PERMISSION_NOTIFICATIONS=1'
+                ]
+              end
+            end
+          end
+          EOF
         working-directory: consumer-ui-app-main
+        shell: bash
+
+      - name: Pod install with repo update
+        run: |
+          cd ios
+          rm -rf Pods/
+          pod repo update
+          pod cache clean --all
+          pod install --repo-update
+        working-directory: consumer-ui-app-main
+        shell: bash
 
       - name: Prepare iOS build
         run: |
