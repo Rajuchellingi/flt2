@@ -217,5 +217,17 @@ jobs:
         run: |
           flutter precache --ios
           flutter build ios --no-codesign --release
+          mkdir -p build/ios/ipa
+          cd build/ios/archive/Runner.xcarchive
+          xcodebuild -exportArchive -archivePath . -exportPath ../ipa -exportOptionsPlist exportOptions.plist || true
+          cd ../../..
+          xcrun xcodebuild -exportArchive -archivePath build/ios/archive/Runner.xcarchive -exportPath build/ios/ipa -exportOptionsPlist ios/Runner/exportOptions.plist
         working-directory: consumer-ui-app-main
         shell: bash
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v3
+        with:
+          name: ios-build
+          path: consumer-ui-app-main/build/ios/ipa/
+          retention-days: 7
