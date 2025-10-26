@@ -219,3 +219,31 @@ jobs:
           flutter build ios --no-codesign --release
         working-directory: consumer-ui-app-main
         shell: bash
+
+      - name: Export .ipa (pack Runner.app -> Runner.ipa)
+        run: |
+          set -e
+          cd consumer-ui-app-main
+          # Ensure build output exists
+          if [ ! -d build/ios/iphoneos/Runner.app ]; then
+            echo "ERROR: Runner.app not found at build/ios/iphoneos/Runner.app"
+            echo "Listing build/ios contents for debugging:"
+            ls -la build/ios || true
+            exit 1
+          fi
+          mkdir -p build/ios/ipa
+          cd build/ios/iphoneos
+          rm -rf Payload
+          mkdir -p Payload
+          cp -R Runner.app Payload/
+          # Create the IPA
+          zip -r ../../ipa/Runner.ipa Payload
+          echo "IPA created at consumer-ui-app-main/build/ios/ipa/Runner.ipa"
+        working-directory: .
+        shell: bash
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Runner.ipa
+          path: consumer-ui-app-main/build/ios/ipa/Runner.ipa
