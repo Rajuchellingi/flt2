@@ -112,11 +112,8 @@ jobs:
             use_frameworks!
             use_modular_headers!
 
-            # Firebase specific pods
-            pod 'Firebase/Core', '~> 10.12.0'
-            pod 'Firebase/Analytics', '~> 10.12.0'
-            pod 'Firebase/Auth', '~> 10.12.0'
-            pod 'Firebase/Messaging', '~> 10.12.0'
+            source 'https://github.com/CocoaPods/Specs.git'
+          source 'https://cdn.cocoapods.org/'
 
             flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
           end
