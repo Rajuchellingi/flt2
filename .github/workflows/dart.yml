@@ -241,9 +241,9 @@ jobs:
           echo "IPA created at consumer-ui-app-main/build/ios/ipa/Runner.ipa"
         working-directory: .
         shell: bash
-
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
         with:
           name: Runner.ipa
           path: consumer-ui-app-main/build/ios/ipa/Runner.ipa
+
