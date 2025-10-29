@@ -1,249 +1,33 @@
-name: Dart
+name: Build Flutter App
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
   workflow_dispatch:
 
 jobs:
   build-ios:
+    name: Build iOS IPA
     runs-on: macos-latest
-
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Cache CocoaPods files
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cocoaPods
-            ~/Library/Caches/CocoaPods
-            consumer-ui-app-main/ios/Pods
-          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-pods-
-
-      - name: Cache Flutter dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.pub-cache
-            .dart_tool
-            build
-          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-flutter-
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.35.7'
-
-      - name: Show repo and find pubspec(s) (debug)
-        run: |
-          pwd
-          ls -la
-          find . -maxdepth 6 -name pubspec.yaml -print
+          channel: 'stable' # Or specify a version like '3.19.6'
 
       - name: Install dependencies
         run: flutter pub get
         working-directory: consumer-ui-app-main
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Install and update CocoaPods
-        run: |
-          gem install cocoapods -N
-          pod setup
-        shell: bash
-
-      - name: Prepare Flutter iOS build
-        run: |
-          flutter clean
-          flutter pub get
-          flutter precache --ios
-          rm -rf ios/Pods ios/.symlinks ios/Flutter/Flutter.framework ios/Flutter/Flutter.podspec ~/Library/Developer/Xcode/DerivedData
-          cd ios
-          rm -f Podfile
-          flutter pub get
-          flutter pub cache repair
+      - name: Build iOS
+        run: flutter build ipa --release --no-codesign
         working-directory: consumer-ui-app-main
 
-      - name: Setup Podfile
-        run: |
-          cd ios
-          cat > Podfile << 'EOF'
-          platform :ios, '15.0'
-          
-          # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
-          ENV['COCOAPODS_DISABLE_STATS'] = 'true'
-
-          source 'https://cdn.cocoapods.org/'
-
-          project 'Runner', {
-            'Debug' => :debug,
-            'Profile' => :release,
-            'Release' => :release,
-          }
-
-          def flutter_root
-            generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
-            unless File.exist?(generated_xcode_build_settings_path)
-              raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get is executed first"
-            end
-
-            File.foreach(generated_xcode_build_settings_path) do |line|
-              matches = line.match(/FLUTTER_ROOT\=(.*)/)
-              return matches[1].strip if matches
-            end
-            raise "FLUTTER_ROOT not found in #{generated_xcode_build_settings_path}"
-          end
-
-          require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
-
-          flutter_ios_podfile_setup
-
-          target 'Runner' do
-            use_frameworks!
-            use_modular_headers!
-
-            source 'https://github.com/CocoaPods/Specs.git'
-          source 'https://cdn.cocoapods.org/'
-
-            flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-          end
-
-          post_install do |installer|
-            installer.pods_project.targets.each do |target|
-              flutter_additional_ios_build_settings(target)
-              target.build_configurations.each do |config|
-                config.build_settings['ENABLE_BITCODE'] = 'NO'
-                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
-                # Exclude arm64 architecture for simulator builds
-                config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
-                # Add privacy descriptions
-                config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
-                  '$(inherited)',
-                  'PERMISSION_CAMERA=1',
-                  'PERMISSION_PHOTOS=1',
-                  'PERMISSION_NOTIFICATIONS=1'
-                ]
-              end
-            end
-          end
-          EOF
-        working-directory: consumer-ui-app-main
-        shell: bash
-
-      - name: Install pods
-        run: |
-          cd ios
-          pod install --repo-update --clean-install
-        working-directory: consumer-ui-app-main
-        shell: bash
-
-      - name: Verify Flutter config
-        run: |
-          flutter doctor -v
-          flutter pub deps
-        working-directory: consumer-ui-app-main
-        shell: bash
-
-      - name: Prepare iOS build
-        run: |
-          flutter pub get
-          cd ios
-          rm -f Podfile.lock
-          cat > Podfile << 'EOF'
-          # Uncomment this line to define a global platform for your project
-          platform :ios, '15.0'
-
-          # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
-          ENV['COCOAPODS_DISABLE_STATS'] = 'true'
-
-          project 'Runner', {
-            'Debug' => :debug,
-            'Profile' => :release,
-            'Release' => :release,
-          }
-
-          def flutter_root
-            generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
-            unless File.exist?(generated_xcode_build_settings_path)
-              raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get is executed first"
-            end
-
-            File.foreach(generated_xcode_build_settings_path) do |line|
-              matches = line.match(/FLUTTER_ROOT\=(.*)/)
-              return matches[1].strip if matches
-            end
-            raise "FLUTTER_ROOT not found in #{generated_xcode_build_settings_path}. Try deleting Generated.xcconfig, then run flutter pub get"
-          end
-
-          require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
-
-          flutter_ios_podfile_setup
-
-          target 'Runner' do
-            use_frameworks!
-            use_modular_headers!
-
-            flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-          end
-
-          post_install do |installer|
-            installer.pods_project.targets.each do |target|
-              flutter_additional_ios_build_settings(target)
-              target.build_configurations.each do |config|
-                config.build_settings['ENABLE_BITCODE'] = 'NO'
-                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
-                # Add the following line for ARM64 compatibility
-                config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
-              end
-            end
-          end
-          EOF
-          pod repo update
-          pod install --repo-update
-        working-directory: consumer-ui-app-main
-        shell: bash
-
-      - name: Build iOS (no codesign)
-        run: |
-          flutter precache --ios
-          flutter build ios --no-codesign --release
-        working-directory: consumer-ui-app-main
-        shell: bash
-
-      - name: Export .ipa (pack Runner.app -> Runner.ipa)
-        run: |
-          set -e
-          cd consumer-ui-app-main
-          # Ensure build output exists
-          if [ ! -d build/ios/iphoneos/Runner.app ]; then
-            echo "ERROR: Runner.app not found at build/ios/iphoneos/Runner.app"
-            echo "Listing build/ios contents for debugging:"
-            ls -la build/ios || true
-            exit 1
-          fi
-          mkdir -p build/ios/ipa
-          cd build/ios/iphoneos
-          rm -rf Payload
-          mkdir -p Payload
-          cp -R Runner.app Payload/
-          # Create the IPA
-          zip -r ../../ipa/Runner.ipa Payload
-          echo "IPA created at consumer-ui-app-main/build/ios/ipa/Runner.ipa"
-        working-directory: .
-        shell: bash
-      - name: Upload IPA artifact
+      - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Runner.ipa
-          path: consumer-ui-app-main/build/ios/ipa/Runner.ipa
+          name: ios-release
+          path: consumer-ui-app-main/build/ios/ipa/*.ipa
 
