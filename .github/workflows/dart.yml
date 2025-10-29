@@ -31,32 +31,20 @@ jobs:
         run: pod repo update
       
       - name: Build iOS
+        run: flutter build ipa --release --no-codesign
         working-directory: consumer-ui-app-main
-        run: flutter build ios --release --no-codesign
-      
-      - name: Create Payload directory
-        working-directory: consumer-ui-app-main/build/ios/iphoneos
-        run: mkdir Payload
-      
-      - name: Move app to Payload
-        working-directory: consumer-ui-app-main/build/ios/iphoneos
-        run: mv Runner.app Payload/
-      
-      - name: Create IPA
-        working-directory: consumer-ui-app-main/build/ios/iphoneos
-        run: zip -qq -r -9 FlutterIpaExport.ipa Payload
       
       - name: Upload IPA as artifact
         uses: actions/upload-artifact@v4
         with:
           name: ios-build-${{ github.run_number }}
-          path: build/ios/iphoneos/FlutterIpaExport.ipa
+          path: consumer-ui-app-main/build/ios/ipa/*.ipa
       
       - name: Upload IPA to Release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: consumer-ui-app-main/build/ios/iphoneos/FlutterIpaExport.ipa
+          file: consumer-ui-app-main/build/ios/ipa/*.ipa
           tag: v1.0
           overwrite: true
           body: "iOS Build v1.0.${{ github.run_number }}"
