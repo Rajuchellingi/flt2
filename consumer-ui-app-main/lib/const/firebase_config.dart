@@ -115,8 +115,9 @@ checkUrlAndNavigate(linkType, link) async {
       var result = await Get.toNamed('/cart');
     } else if (linkType == 'external-url') {
       if (link.startsWith('http://') || link.startsWith('https://')) {
-        if (await canLaunch(link)) {
-          await launch(link);
+        final Uri url = Uri.parse(link);
+        if (await canLaunchUrl(url)) {
+          await launchUrl(url, mode: LaunchMode.externalApplication);
         } else {
           throw 'Could not launch $link';
         }
